@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+ }
+ 
+ body, ul, p, h1, h2, h3, h4{
+     margin: 0;
+     padding: 0;
+ }
+
+ 
+
+ .logo a{
+    text-decoration: none;
+    color: white;
+ }
+ .logo a:hover{
+    scale: 1.1;
+    color:red;
+    cursor: pointer;
+ }
+
+.navigacia{
+    background-color: #333;
+}
+ 
+
+.for_nav_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white;
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+li a:hover{
+    background-color: azure;
+    color: black;
+    
+}
+
+ul li a{
+text-decoration: none!important;
+color: rgb(253, 251, 251);
+display: block;
+padding: 15px;
+}
+
+
+.burgeri{
+    display: none;
+}
+
+@media (max-width:700px){
+    .burgeri{
+        display: flex;
+        margin-left: auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        
+    }
+
+    ul{
+        flex-direction: column;
+        
+    }
+
+    
+
+    .for_nav_flex{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        left: 0px;
+
+    }
+    .navbar_link{
+        width: 100%;
+        text-align: center;
+    }
+    .change{
+        display: none;
+    }
+}
+
+
+
+
+
